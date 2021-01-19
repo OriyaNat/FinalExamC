@@ -1,0 +1,145 @@
+\hypertarget{stack_functions_8h}{}\doxysection{stack\+Functions.\+h File Reference}
+\label{stack_functions_8h}\index{stackFunctions.h@{stackFunctions.h}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node__t}{Node\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{stack_functions_8h_afea10d386f9d1ac7ea594582204021eb}\label{stack_functions_8h_afea10d386f9d1ac7ea594582204021eb}} 
+typedef struct \mbox{\hyperlink{struct_node__t}{Node\+\_\+t}} {\bfseries Node}
+\item 
+\mbox{\Hypertarget{stack_functions_8h_adea1a1314987f22cc3efa07ee5ef99e9}\label{stack_functions_8h_adea1a1314987f22cc3efa07ee5ef99e9}} 
+typedef struct \mbox{\hyperlink{struct_node__t}{Node\+\_\+t}} $\ast$ {\bfseries PNode}
+\item 
+\mbox{\Hypertarget{stack_functions_8h_af485dab738806ae8f0ecb0aefe14c314}\label{stack_functions_8h_af485dab738806ae8f0ecb0aefe14c314}} 
+typedef struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}} {\bfseries Stack}
+\item 
+\mbox{\Hypertarget{stack_functions_8h_a56dc885abad810960f2a9efd98ea0bbf}\label{stack_functions_8h_a56dc885abad810960f2a9efd98ea0bbf}} 
+typedef struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}} $\ast$ {\bfseries PStack}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_stack__t}{PStack}} \mbox{\hyperlink{stack_functions_8h_a64e68c7346f552670beab8e36b81f190}{Create\+Stack}} (void)
+\begin{DoxyCompactList}\small\item\em create a new stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_functions_8h_ae9eb3fb43904f110ea9f2801b204a52f}{Delete\+Stack}} (\mbox{\hyperlink{struct_stack__t}{PStack}} stack)
+\begin{DoxyCompactList}\small\item\em delete all stack from memoery. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_functions_8h_a71133685603e0cfca7ccb974086a26ca}{Stack\+Push}} (\mbox{\hyperlink{struct_stack__t}{PStack}} stack, void $\ast$item)
+\begin{DoxyCompactList}\small\item\em insert a new item to head (start) of stack. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{stack_functions_8h_a33d068086d0d71c6c1c94422b039cab3}{Stack\+Pop}} (\mbox{\hyperlink{struct_stack__t}{PStack}} stack)
+\begin{DoxyCompactList}\small\item\em remove the last value inserted to stack (LIFO). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stack_functions_8h_af2b4f56eb2db4b65af51ead706f23de5}\label{stack_functions_8h_af2b4f56eb2db4b65af51ead706f23de5}} 
+int {\bfseries Stack\+Get\+Last\+Error} (\mbox{\hyperlink{struct_stack__t}{Stack}} $\ast$)
+\item 
+size\+\_\+t \mbox{\hyperlink{stack_functions_8h_a5f3e5088732aef0a0206e8a84c72566b}{Stack\+Size}} (\mbox{\hyperlink{struct_stack__t}{PStack}} stack)
+\begin{DoxyCompactList}\small\item\em count items in the stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_functions_8h_a7e4472544056993b87a96bde74976dae}{Stack\+Print}} (\mbox{\hyperlink{struct_stack__t}{PStack}} stack)
+\begin{DoxyCompactList}\small\item\em print all items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+stack functions libary. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stack_functions_8h_a64e68c7346f552670beab8e36b81f190}\label{stack_functions_8h_a64e68c7346f552670beab8e36b81f190}} 
+\index{stackFunctions.h@{stackFunctions.h}!CreateStack@{CreateStack}}
+\index{CreateStack@{CreateStack}!stackFunctions.h@{stackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{CreateStack()}{CreateStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_stack__t}{PStack}} Create\+Stack (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+create a new stack. 
+
+\begin{DoxyReturn}{Returns}
+pointer to stack created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_functions_8h_ae9eb3fb43904f110ea9f2801b204a52f}\label{stack_functions_8h_ae9eb3fb43904f110ea9f2801b204a52f}} 
+\index{stackFunctions.h@{stackFunctions.h}!DeleteStack@{DeleteStack}}
+\index{DeleteStack@{DeleteStack}!stackFunctions.h@{stackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{DeleteStack()}{DeleteStack()}}
+{\footnotesize\ttfamily void Delete\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack__t}{PStack}}}]{stack }\end{DoxyParamCaption})}
+
+
+
+delete all stack from memoery. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & pointer of stack to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_functions_8h_a33d068086d0d71c6c1c94422b039cab3}\label{stack_functions_8h_a33d068086d0d71c6c1c94422b039cab3}} 
+\index{stackFunctions.h@{stackFunctions.h}!StackPop@{StackPop}}
+\index{StackPop@{StackPop}!stackFunctions.h@{stackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{StackPop()}{StackPop()}}
+{\footnotesize\ttfamily void$\ast$ Stack\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack__t}{PStack}}}]{stack }\end{DoxyParamCaption})}
+
+
+
+remove the last value inserted to stack (LIFO). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & pointer to stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value at head of stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_functions_8h_a7e4472544056993b87a96bde74976dae}\label{stack_functions_8h_a7e4472544056993b87a96bde74976dae}} 
+\index{stackFunctions.h@{stackFunctions.h}!StackPrint@{StackPrint}}
+\index{StackPrint@{StackPrint}!stackFunctions.h@{stackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{StackPrint()}{StackPrint()}}
+{\footnotesize\ttfamily void Stack\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack__t}{PStack}}}]{stack }\end{DoxyParamCaption})}
+
+
+
+print all items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & pointer of stack to print. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_functions_8h_a71133685603e0cfca7ccb974086a26ca}\label{stack_functions_8h_a71133685603e0cfca7ccb974086a26ca}} 
+\index{stackFunctions.h@{stackFunctions.h}!StackPush@{StackPush}}
+\index{StackPush@{StackPush}!stackFunctions.h@{stackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{StackPush()}{StackPush()}}
+{\footnotesize\ttfamily void Stack\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack__t}{PStack}}}]{stack,  }\item[{void $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+insert a new item to head (start) of stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & pointer of stack to insert toward. \\
+\hline
+{\em item} & an item to insert \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_functions_8h_a5f3e5088732aef0a0206e8a84c72566b}\label{stack_functions_8h_a5f3e5088732aef0a0206e8a84c72566b}} 
+\index{stackFunctions.h@{stackFunctions.h}!StackSize@{StackSize}}
+\index{StackSize@{StackSize}!stackFunctions.h@{stackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{StackSize()}{StackSize()}}
+{\footnotesize\ttfamily size\+\_\+t Stack\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack__t}{PStack}}}]{stack }\end{DoxyParamCaption})}
+
+
+
+count items in the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & stack to be count. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of items. 
+\end{DoxyReturn}

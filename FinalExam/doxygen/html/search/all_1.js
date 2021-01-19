@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['listnode_5ft_1',['ListNode_t',['../struct_list_node__t.html',1,'']]],
-  ['longlongarray_5ft_2',['LongLongArray_t',['../struct_long_long_array__t.html',1,'']]]
+  ['deletestack_1',['DeleteStack',['../stack_functions_8h.html#ae9eb3fb43904f110ea9f2801b204a52f',1,'stackFunctions.c']]]
 ];

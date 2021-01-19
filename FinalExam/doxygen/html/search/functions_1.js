@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['secondfunc_7',['SecondFunc',['../functions_8h.html#ad2ba7fec1cbd4efb5b30a71b1b5ae9dd',1,'functions.h']]]
+  ['deletestack_13',['DeleteStack',['../stack_functions_8h.html#ae9eb3fb43904f110ea9f2801b204a52f',1,'stackFunctions.c']]]
 ];

@@ -22,13 +22,12 @@ void DeleteStack(PStack  stack)
     }
 }
 
-void StackPush(PStack stack, void *item)
+void StackPush(PStack stack, void **item)
 {
     PNode newNode = (PNode)malloc(sizeof(Node));
-    newNode->val = item;
+    newNode->val = *item;
     newNode->next = stack->head;
     stack->head = newNode; 
-
 }
 
 void *StackPop(PStack stack)
@@ -40,13 +39,14 @@ void *StackPop(PStack stack)
     void *value = stack->head->val;
     free(stack->head);
     stack->head = stack->head->next;
+    return value;
 }
 
 size_t StackSize(PStack stack)
 {
     size_t count = 0;
     PNode current = stack->head;
-    while (current != NULL)
+    while (current->next != NULL)
     {
         ++count;
         current = current->next;
@@ -64,8 +64,4 @@ void StackPrint(PStack stack)
         printf_s("item number %d -> %p\n", i, current->val);
         ++i;
     }
-}
-void printList(struct Node *node, void (*fptr)(void *))
-{
-
 }

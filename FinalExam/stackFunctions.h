@@ -8,7 +8,7 @@
 typedef struct Node_t
 {
     void *val;
-    PNode next;
+    struct Node_t *next;
 }Node, *PNode;
 
 typedef struct Stack_t

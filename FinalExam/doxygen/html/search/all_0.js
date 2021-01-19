@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['functions_2eh_0',['functions.h',['../functions_8h.html',1,'']]]
+  ['createstack_0',['CreateStack',['../stack_functions_8h.html#a64e68c7346f552670beab8e36b81f190',1,'stackFunctions.c']]]
 ];
